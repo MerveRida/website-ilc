@@ -37,25 +37,13 @@ ul {
     text-decoration:none; 
   }
 
-  #info>h3{
-    display: inline-block;
-    width: 450px;
-  }
-
-  #info>p{
-    display: inline-block;
-    width: 550px;
-    position: absolute;
-    top: 20px;
-    right: 150px;
-  }
 
   h1{
-    margin-top: 100px;
+    margin-top: 30px;
     text-align: center;
     position:relative;
-    right: 50px;
     font-size: xx-large;
+    color: var(--backgroundColor);
   }
 
   #logo{
@@ -75,18 +63,20 @@ ul {
 
   #info > p, #info > h3{
     background-color: var(--textColor);
+    padding-left: 70px;
+    padding-right: 30px;
   }
 
-  #info{
+  #info {
     padding-top: 20px;
-    padding-right: 30px;
     padding-left: 50px;
     background-color: var(--textColor);
     color: var(--backgroundColor);
-    position:relative;
-    display: block;
-    margin: auto;
-    width: 100%;
+    margin:auto;
+    display: flex;
+  flex-direction: row;
+    width: 90%;
+    
   }
 
   #steps{
@@ -94,15 +84,9 @@ ul {
     color: var(--backgroundColor);
     position:relative;
     display: block;
-    width: 100%;
+    width: 90%;
   }
 
-  #info>hr.solid {
-    border-top: 3px solid var(--primaryColor);
-    position: absolute;
-    left: 50px;
-    width: 20%;
-  }
 
   #top{
     background-color: var(--backgroundColor);
@@ -110,22 +94,23 @@ ul {
   }
 
   #bottom{
+    margin-top: 30px;
     background-color: var(--textColor);
   }
 
   .step{
-    display: inline-flex;
+    display: flex;
+    justify-content: center;
     margin:auto;
-    padding-right: 30px;
-    padding-left: 30px;
+    width: 90%;
+    padding-left: 100px;
+    align-items: center;
   }
 
-  .stepText>hr.solid {
+  hr.solid {
     border-top: 3px solid var(--primaryColor);
-    width: 20%;
-    position: absolute;
-    left:0%;
-    top:40px;
+    width: 40%;
+    margin-left:0px;
   }
 
   .number{
