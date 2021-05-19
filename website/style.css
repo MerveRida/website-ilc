@@ -7,6 +7,10 @@
     font-family: 'Spinnaker', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 ul {
     position: absolute;
     top: 80px;
@@ -190,5 +194,70 @@ hr.solid {
 
 .video {
     padding-bottom: 30px;
-    ;
+}
+
+#aboutText {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    z-index: 950;
+}
+
+#stylistic {
+    width: 10%;
+    position: absolute;
+    bottom: 70px;
+    z-index: 900;
+}
+
+#teamMembers {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: space-around;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.member {
+    width: 400px;
+    background-color: #F0F0F0;
+    margin-bottom: 30px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.memberPhoto {
+    width: 150px;
+    border-radius: 100px;
+    padding-left: 10px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-content: center;
+}
+
+.memberName {
+    padding-left: 30px;
+}
+
+.memberName>h5 {
+    color: var(--primaryColor);
+}
+
+.memberName>h3 {
+    color: var(--backgroundColor);
+}
+
+.memberInfo {
+    width: 90%;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
