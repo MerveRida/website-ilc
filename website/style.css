@@ -261,3 +261,71 @@ hr.solid {
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
+#blog{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: space-around;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.blogPost{
+    display: flex;
+    width: 100%;
+    background-color: #F0F0F0;
+    margin-bottom: 30px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.blogImage{
+    width: 400px;
+    border-radius: 10px;
+}
+
+.blogText{
+    padding: 20px;
+}
+
+button {
+    padding: 10px;
+    background-color: var(--primaryColor);
+    border-radius: 10px;
+    border-color: var(--primaryColor);
+    position: relative;
+    left: 80%;
+}
+
+button:hover{
+    background-color: #faf742;
+}
+
+#blogView{
+    width: 70%;
+    margin: auto;
+    color:var(--backgroundColor);
+    padding-top: 30px;
+    padding-bottom: 80px;
+}
+
+#blogView>img, #blogView>iframe{
+    width: 80%;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+}
+
+#blogView>a{
+  color:var(--backgroundColor);
+  text-decoration: underline;
+}
+
+#blogView>a:hover{
+    color:var(--primaryColor)
+  }

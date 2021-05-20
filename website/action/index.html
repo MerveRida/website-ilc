@@ -8,9 +8,9 @@
     <title>Immersive Learning Collective</title>
 
     <!-- Include links to CSS stylesheets below -->
-    <link rel="icon" type="image/png" href="siteImages/transparent.png">
+    <link rel="icon" type="image/png" href="../siteImages/transparent.png">
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Spinnaker&display=swap" rel="stylesheet">
@@ -20,14 +20,14 @@
     <section id="top">
         <div id="">
             <div id="menu">
-                <a href="index.html">
-                    <img id="logo" src="siteImages/logo.png">
+                <a href="../index.html">
+                    <img id="logo" src="../siteImages/logo.png">
                 </a>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="resources.html">Resources</a></li>
-                    <li><a class="selected" href="action.html">AR/VR in Action</a></li>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../resources.html">Resources</a></li>
+                    <li><a class="selected" href="../action/index.html">AR/VR in Action</a></li>
                     <li><a href="#footer">Contact</a></li>
                 </ul>
             </div>
@@ -35,38 +35,45 @@
     </section>
     <section id="bottom">
         <h1>AR/VR in Action</h1>
-        <p>blogposts - rendered with js / also can use react</p>
     </section>
 
+    <div id="blog"></div>
 
     <a name="footer"></a>
     <section id="footer">
         <div id="footerDiv">
             <div>
-                <img id="logo" src="siteImages/logo.png">
+                <img id="logo" src="../siteImages/logo.png">
                 <p id="identity">@2021 by Immersive Learning Collective</p>
             </div>
 
             <div id="footerText">
                 <h3>Contact Us</h3>
                 <div class="socialItem">
-                    <a href="mailto: uncilcollective@gmail.com"><img class="socials" src="socialLogos/email.png"></a>
+                    <a href="mailto: uncilcollective@gmail.com"><img class="socials" src="../socialLogos/email.png"></a>
                     <p>uncilcollective@gmail.com</p>
                 </div>
                 <div class="socialItem">
-                    <a href="https://www.linkedin.com/company/immersive-learning-collective"><img class="socials" src="socialLogos/linkedin.png"></a>
+                    <a href="https://www.linkedin.com/company/immersive-learning-collective"><img class="socials" src="../socialLogos/linkedin.png"></a>
                     <p>immersive-learning-collective</p>
                 </div>
                 <div class="socialItem">
-                    <a href="https://www.facebook.com/uncilcollective/"><img class="socials" src="socialLogos/facebook.png"></a>
-                    <a href="https://twitter.com/uncilcollective"><img class="socials" src="socialLogos/twitter.png"></a>
-                    <a href="https://www.instagram.com/uncilcollective/"><img class="socials" src="socialLogos/instagram.png"></a>
+                    <a href="https://www.facebook.com/uncilcollective/"><img class="socials" src="../socialLogos/facebook.png"></a>
+                    <a href="https://twitter.com/uncilcollective"><img class="socials" src="../socialLogos/twitter.png"></a>
+                    <a href="https://www.instagram.com/uncilcollective/"><img class="socials" src="../socialLogos/instagram.png"></a>
                     <p>uncilcollective</p>
                 </div>
             </div>
         </div>
 
     </section>
+
+    <script src="action.js" type = "module"></script>
+
+        <!-- TODO: Add link to jQuery here -->
+        <script src = ../node_modules/jquery/dist/jquery.js></script>
+
+        <script src="data.js"></script>
 </body>
 
 </html>

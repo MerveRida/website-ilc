@@ -1,0 +1,15 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "action.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.6.0",
+    "jQuery": "^1.7.4"
+  }
+}
