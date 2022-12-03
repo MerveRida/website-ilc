@@ -11,20 +11,6 @@ html {
     scroll-behavior: smooth;
 }
 
-ul {
-    position: absolute;
-    top: 80px;
-    right: 150px;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-li {
-    display: inline;
-    margin-left: 50px;
-}
-
 a {
     color: var(--textColor);
     text-decoration: none;
@@ -49,13 +35,26 @@ h1 {
     color: var(--backgroundColor);
 }
 
-#logo {
-    margin-left: 100px;
-    width: 350px;
+#navbar {
+    flex: 70%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 50px;
 }
-
-#menu {
+.navbarEntry {
+    text-align: center;
     display: inline-block;
+    width: 19%;
+}
+#hamburger {
+    display: none;
+}
+#logo {
+    flex: 30%;
+}
+#menu {
+    display: flex;
 }
 
 #landing {
@@ -139,7 +138,7 @@ hr.solid {
 #footerText {
     display: block;
     position: absolute;
-    right: 20%;
+    right: 10%;
 }
 
 #identity {
@@ -150,12 +149,17 @@ hr.solid {
 
 .socials {
     height: 35px;
-    padding-right: 10px;
 }
 
 .socialItem {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+}
+
+.socialText {
+    display: flex;
+    flex: 70%;
 }
 
 .sponsors {
@@ -262,7 +266,7 @@ hr.solid {
     padding-bottom: 20px;
 }
 
-#blog{
+#blog {
     display: flex;
     width: 80%;
     margin: auto;
@@ -274,7 +278,7 @@ hr.solid {
     margin-bottom: 30px;
 }
 
-.blogPost{
+.blogPost {
     display: flex;
     width: 100%;
     background-color: #F0F0F0;
@@ -283,12 +287,12 @@ hr.solid {
     border-radius: 10px;
 }
 
-.blogImage{
+.blogImage {
     width: 400px;
     border-radius: 10px;
 }
 
-.blogText{
+.blogText {
     padding: 20px;
 }
 
@@ -301,11 +305,11 @@ button {
     left: 80%;
 }
 
-button:hover{
+button:hover {
     background-color: #faf742;
 }
 
-#blogView{
+#blogView {
     width: 70%;
     margin: auto;
     color:var(--backgroundColor);
@@ -313,19 +317,124 @@ button:hover{
     padding-bottom: 80px;
 }
 
-#blogView>img, #blogView>iframe{
+#blogView>img, #blogView>iframe {
     width: 80%;
     display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
 }
 
-#blogView>a{
-  color:var(--backgroundColor);
-  text-decoration: underline;
+#blogView>a {
+    color:var(--backgroundColor);
+    text-decoration: underline;
 }
 
-#blogView>a:hover{
+#blogView>a:hover {
     color:var(--primaryColor)
-  }
+}
+
+  
+@media screen and (max-width: 900px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    #info {
+        display: block;
+        padding: 20px;
+    }
+    #info>p,
+    #info>h3 {
+        background-color: var(--textColor);
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #steps {
+        width: 94%;
+        padding: 3%;
+    }
+    .step {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        display: block;
+    }
+    #logo,
+    #landing {
+        display: none;
+    }
+    
+    #top {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 1;
+        width: 100%;
+    }
+    #menu {
+        display: none;
+    }
+    #navbar {
+        position: static;
+        top: 20px;
+        left: 0px;
+        width: 100%;
+        padding-bottom: 15px;
+    }
+    .navbarEntry {
+        display: block;
+        margin: 0;
+        padding: 5px;
+        text-align: center;
+        width: 100%;
+    }
+    #hamburger {
+        width: 32px;
+        height: 32px;
+        position: fixed;
+        top: 4px;
+        left: 4px;
+        z-index: 2;
+        display: block;
+    }
+    
+    #blog {
+        margin: 0;
+        width: 100%;
+    }
+    .blogImage {
+        width: 100%;
+        text-align: center;
+    }
+    .blogText {
+        display: block;
+    }
+    .blogPost {
+        display: block;
+    }
+    #stylistic {
+        display: none;
+    } 
+    #footer {
+        display: block;
+    }
+    #footerDiv {
+        display: block;
+    }
+    #footerText {
+        position: static;
+    }
+    .sponsors {
+        width: 90%;
+        padding: 5%;
+        height: auto;
+    }
+
+    .socialItem {
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+}

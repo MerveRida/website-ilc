@@ -18,20 +18,19 @@
 
 <body>
     <section id="top">
-        <div id="">
-            <div id="menu">
-                <a href="../index.html">
-                    <img id="logo" src="../siteImages/logo.png">
-                </a>
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../about.html">About</a></li>
-                    <li><a href="../resources.html">Resources</a></li>
-                    <li><a class="selected" href="../action/index.html">AR/VR in Action</a></li>
-                    <li><a href="#footer">Contact</a></li>
-                </ul>
-            </div>
+        <div id="menu">
+            <a href="../index.html">
+                <img id="logo" src="../siteImages/logo.png">
+            </a>
+            <ul id="navbar">
+                <li class="navbarEntry"><a href="../index.html">Home</a></li>
+                <li class="navbarEntry"><a href="../about.html">About</a></li>
+                <li class="navbarEntry"><a href="../resources.html">Resources</a></li>
+                <li class="navbarEntry"><a class="selected" href="../action/index.html">AR/VR in Action</a></li>
+                <li class="navbarEntry"><a href="#footer">Contact</a></li>
+            </ul>
         </div>
+        <img id="hamburger" src="../siteImages/hamburger.png" alt="hamburger menu icon">
     </section>
     <section id="bottom">
         <h1>AR/VR in Action</h1>
@@ -39,7 +38,6 @@
 
     <div id="blog"></div>
 
-    <a name="footer"></a>
     <section id="footer">
         <div id="footerDiv">
             <div>
@@ -65,15 +63,14 @@
                 </div>
             </div>
         </div>
-
     </section>
 
     <script src="action.js" type = "module"></script>
 
-        <!-- TODO: Add link to jQuery here -->
-        <script src = ../node_modules/jquery/dist/jquery.js></script>
-
-        <script src="data.js"></script>
+    <!-- TODO: Add link to jQuery here -->
+    <script src = ../node_modules/jquery/dist/jquery.js></script>
+    <script src="../navbar.js"></script>
+    <script src="data.js"></script>
 </body>
 
 </html>
