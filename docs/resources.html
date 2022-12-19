@@ -8,30 +8,27 @@
     <title>Immersive Learning Cooperative</title>
 
     <!-- Include links to CSS stylesheets below -->
-    <link rel="icon" type="image/png" href="siteImages/transparent.png">
-
     <link rel="stylesheet" href="style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Spinnaker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Spinnaker&amp;display=swap" rel="stylesheet">
 </head>
 
 <body>
     <section id="top">
-        <div id="">
-            <div id="menu">
-                <a href="index.html">
-                    <img id="logo" src="siteImages/logo.png">
-                </a>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a class="selected" href="resources.html">Resources</a></li>
-                    <li><a href="action/index.html">AR/VR in Action</a></li>
-                    <li><a href="#footer">Contact</a></li>
-                </ul>
-            </div>
+        <div id="menu">
+            <a href="index.html">
+                <img id="logo" src="siteImages/logo.png">
+            </a>
+            <ul id="navbar">
+                <li class="navbarEntry"><a href="index.html">Home</a></li>
+                <li class="navbarEntry"><a href="about.html">About</a></li>
+                <li class="navbarEntry"><a class="selected" href="resources.html">Resources</a></li>
+                <li class="navbarEntry"><a href="action/index.html">AR/VR in Action</a></li>
+                <li class="navbarEntry"><a href="#footer">Contact</a></li>
+            </ul>
         </div>
+        <img id="hamburger" src="siteImages/hamburger.png" alt="hamburger menu icon">
     </section>
     <section id="bottom">
         <h1>Resources</h1>
@@ -73,8 +70,8 @@
                 </div>
             </div>
         </div>
-
     </section>
+    <script src="navbar.js"></script>
 </body>
 
 </html>
